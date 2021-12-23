@@ -52,6 +52,12 @@ pipeline {
                 sh "flutter build ios --release --no-codesign"
             }
         }
+        stage('Flutter Build WEB') {
+            steps {
+                sh "flutter build web"
+            }
+        }
+      
         // stage('Make iOS IPA And Distribute') {
         //         steps {
         //             dir('ios'){
