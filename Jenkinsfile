@@ -28,11 +28,11 @@ pipeline {
                 sh "flutter analyze"
             }
         }
-        stage ('Run Flutter Tests') {
-            steps {
-                sh "flutter test --coverage -r expanded"
-            }
-        }
+//         stage ('Run Flutter Tests') {
+//             steps {
+//                 sh "flutter test --coverage -r expanded"
+//             }
+//         }
         stage ('Flutter Build APK') {
             steps {
                 sh "flutter build apk --split-per-abi"
