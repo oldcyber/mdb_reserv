@@ -137,7 +137,7 @@ class LeftColumn extends StatelessWidget {
                 ),
                 child: Row(
                   children: [
-                    Container(
+                    SizedBox(
                       width: 40.0,
                       height: 20.0,
                       child: Center(child: Text('$index')),
